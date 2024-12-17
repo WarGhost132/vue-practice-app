@@ -27,3 +27,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 `vee-validate` - for form tracking value and submission.
 
 `yup` - for form validate
+
+`axios` - for requests, getting responses from the server
