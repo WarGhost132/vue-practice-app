@@ -30,6 +30,10 @@ const routes = [
       auth: false,
     },
   },
+  {
+    path: "/request",
+    name: "Request",
+  },
 ];
 
 const router = createRouter({
