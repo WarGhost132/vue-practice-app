@@ -17,7 +17,7 @@
         <td>{{ request.fio }}</td>
         <td>{{ request.phone }}</td>
         <td>{{ currency(request.amount) }}</td>
-        <td>{{ request.status }}</td>
+        <td><app-status :type="request.status" /></td>
         <td>
           <router-link v-slot="{navigate}" custom :to="{name: 'Request', params: {id: request.id}}">
             <button class="btn primary" @click="navigate">Открыть</button>
@@ -30,6 +30,7 @@
 
 <script>
 import {currency} from '../../utils/currency'
+import AppStatus from '../ui/AppStatus.vue'
 
 export default {
   props: ['requests'],
@@ -37,7 +38,8 @@ export default {
     return {
       currency
     }
-  }
+  },
+  components: {AppStatus}
 }
 </script>
 
