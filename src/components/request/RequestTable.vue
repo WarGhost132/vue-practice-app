@@ -16,7 +16,7 @@
         <td>{{ idx + 1 }}</td>
         <td>{{ request.fio }}</td>
         <td>{{ request.phone }}</td>
-        <td>{{ request.amount }}</td>
+        <td>{{ currency(request.amount) }}</td>
         <td>{{ request.status }}</td>
         <td>
           <router-link v-slot="{navigate}" custom :to="{name: 'Request', params: {id: request.id}}">
@@ -29,8 +29,15 @@
 </template>
 
 <script>
+import {currency} from '../../utils/currency'
+
 export default {
-  props: ['requests']
+  props: ['requests'],
+  setup() {
+    return {
+      currency
+    }
+  }
 }
 </script>
 
