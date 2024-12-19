@@ -1,5 +1,17 @@
 # vue-practice-app
 
+## Deploy
+
+```
+https://vue-online-bank-5ef46.web.app/
+```
+
+For auth:
+
+email: `k@mail.ru`
+
+password: `123456`
+
 ## Project setup
 
 ```
