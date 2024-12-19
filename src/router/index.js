@@ -33,6 +33,7 @@ const routes = [
   {
     path: "/request",
     name: "Request",
+    component: Home,
   },
 ];
 
